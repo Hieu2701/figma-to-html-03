@@ -52,13 +52,15 @@ a {
   letter-spacing: -1px;
 }
 
-.service-desc {
+.service-desc,
+.section-desc {
   padding-top: 18px;
   color: #575f66;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.67;
 }
+
 /* ============= header ============== */
 .header {
   background: var(--header-bg);
@@ -207,7 +209,7 @@ align-items: căn chỉnh từng item theo chiều dọc
   /* vì thẻ p là thẻ block, đặc tính thẻ block chiếm hết chiều ngang của dòng, 
   khi giới hạn w468, thì text-align center vẫn căn giữa nội dung trong cái block w468, nhiệm vụ
   cần căn giữa block w468 ra giữa trang */
-  margin: 0 auto;
+  margin: 18px auto 0;
 }
 
 .service__row {
@@ -280,4 +282,59 @@ align-items: căn chỉnh từng item theo chiều dọc
 .service__btn:hover {
   opacity: 0.7;
   transition: 0.4s;
+}
+
+/* ========================== how it works ============================= */
+.work {
+  background: #f6fbff;
+  padding: 100px 0;
+}
+
+.work__desc {
+  width: 468px;
+}
+
+.work__list {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.work-item {
+  border-radius: 4px;
+  padding: 43px;
+  border: 16px solid #eaf6ff;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.work-item:hover {
+  border-color: #2e80ce;
+  transform: translateX(16px) translateY(-16px);
+}
+
+.work-item__heading {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.work-item__desc {
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.work-item__more {
+  margin-top: 18px;
+  display: inline-block;
+  color: #2e80ce;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
 }
